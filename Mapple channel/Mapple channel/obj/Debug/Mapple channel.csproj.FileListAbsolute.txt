@@ -6,7 +6,9 @@ C:\Users\Client\Google Drive\Autres\Mapple_Channel\Mapple channel\Mapple channel
 C:\Users\Client\Google Drive\Autres\Mapple_Channel\Mapple channel\Mapple channel\obj\Debug\Mapple channel.csprojResolveAssemblyReference.cache
 C:\Users\Client\Google Drive\Autres\Mapple_Channel\Mapple channel\Mapple channel\obj\Debug\Mapple_channel.Connection.resources
 C:\Users\Client\Google Drive\Autres\Mapple_Channel\Mapple channel\Mapple channel\obj\Debug\Mapple_channel.Properties.Resources.resources
-C:\Users\Client\Google Drive\Autres\Mapple_Channel\Mapple channel\Mapple channel\obj\Debug\Mapple_channel.Tableau.resources
 C:\Users\Client\Google Drive\Autres\Mapple_Channel\Mapple channel\Mapple channel\obj\Debug\Mapple channel.csproj.GenerateResource.Cache
 C:\Users\Client\Google Drive\Autres\Mapple_Channel\Mapple channel\Mapple channel\obj\Debug\Mapple channel.exe
 C:\Users\Client\Google Drive\Autres\Mapple_Channel\Mapple channel\Mapple channel\obj\Debug\Mapple channel.pdb
+C:\Users\Client\Google Drive\Autres\Mapple_Channel\Mapple channel\Mapple channel\obj\Debug\Mapple_channel.ChoixGPIO.resources
+C:\Users\Client\Google Drive\Autres\Mapple_Channel\Mapple channel\Mapple channel\obj\Debug\Mapple_channel.GPIO23.resources
+C:\Users\Client\Google Drive\Autres\Mapple_Channel\Mapple channel\Mapple channel\obj\Debug\Mapple_channel.GPIO24.resources

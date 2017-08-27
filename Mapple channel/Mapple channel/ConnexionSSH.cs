@@ -12,6 +12,8 @@ namespace Mapple_channel
 {
     public partial class Connection : Form
     {
+        private SSH_Connection ssh = new SSH_Connection();
+
         public Connection()
         {
             InitializeComponent();
@@ -25,16 +27,22 @@ namespace Mapple_channel
             textBoxUser.Text = "pi";
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void SetSSHConnectionValues()
         {
             SSH_Connection.user = textBoxUser.Text;
             SSH_Connection.password = textBoxPassword.Text;
             SSH_Connection.IP = textBoxIP.Text;
+        }
 
-            Tableau tab = new Tableau();
-            tab.Show();
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SetSSHConnectionValues();
+            ssh.ConnectionSSH(SSH_Connection.user, SSH_Connection.password, SSH_Connection.IP);
+        }
 
-            SSH_Connection ssh = new SSH_Connection();
+        private void buttonTestConnection_Click(object sender, EventArgs e)
+        {
+            SetSSHConnectionValues();
             richTextBoxConnectionResult.Text = ssh.ConnectionTest(SSH_Connection.user, SSH_Connection.password, SSH_Connection.IP);
         }
     }

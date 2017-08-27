@@ -48,23 +48,41 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="ChoixGPIO.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="ChoixGPIO.Designer.cs">
+      <DependentUpon>ChoixGPIO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConnexionSSH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConnexionSSH.Designer.cs">
+      <DependentUpon>ConnexionSSH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GPIO24.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GPIO24.Designer.cs">
+      <DependentUpon>GPIO24.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SSH_Connection.cs" />
-    <Compile Include="Tableau.cs">
+    <Compile Include="GPIO23.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Tableau.Designer.cs">
-      <DependentUpon>Tableau.cs</DependentUpon>
+    <Compile Include="GPIO23.Designer.cs">
+      <DependentUpon>GPIO23.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="ChoixGPIO.resx">
+      <DependentUpon>ChoixGPIO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConnexionSSH.resx">
+      <DependentUpon>ConnexionSSH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GPIO24.resx">
+      <DependentUpon>GPIO24.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -75,8 +93,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Tableau.resx">
-      <DependentUpon>Tableau.cs</DependentUpon>
+    <EmbeddedResource Include="GPIO23.resx">
+      <DependentUpon>GPIO23.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

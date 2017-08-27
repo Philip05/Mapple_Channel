@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Connection));
             this.button1 = new System.Windows.Forms.Button();
             this.labelUser = new System.Windows.Forms.Label();
             this.labelPassword = new System.Windows.Forms.Label();
@@ -36,14 +37,16 @@
             this.textBoxIP = new System.Windows.Forms.TextBox();
             this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.richTextBoxConnectionResult = new System.Windows.Forms.RichTextBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.buttonTestConnection = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button1.Location = new System.Drawing.Point(283, 281);
+            this.button1.Location = new System.Drawing.Point(286, 300);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(209, 83);
+            this.button1.Size = new System.Drawing.Size(288, 103);
             this.button1.TabIndex = 0;
             this.button1.Text = "Connection";
             this.button1.UseVisualStyleBackColor = true;
@@ -52,8 +55,10 @@
             // labelUser
             // 
             this.labelUser.AutoSize = true;
+            this.labelUser.BackColor = System.Drawing.Color.Transparent;
             this.labelUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelUser.Location = new System.Drawing.Point(214, 108);
+            this.labelUser.ForeColor = System.Drawing.Color.White;
+            this.labelUser.Location = new System.Drawing.Point(190, 115);
             this.labelUser.Name = "labelUser";
             this.labelUser.Size = new System.Drawing.Size(64, 25);
             this.labelUser.TabIndex = 1;
@@ -62,8 +67,10 @@
             // labelPassword
             // 
             this.labelPassword.AutoSize = true;
+            this.labelPassword.BackColor = System.Drawing.Color.Transparent;
             this.labelPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPassword.Location = new System.Drawing.Point(214, 175);
+            this.labelPassword.ForeColor = System.Drawing.Color.White;
+            this.labelPassword.Location = new System.Drawing.Point(190, 182);
             this.labelPassword.Name = "labelPassword";
             this.labelPassword.Size = new System.Drawing.Size(109, 25);
             this.labelPassword.TabIndex = 2;
@@ -72,8 +79,10 @@
             // labelIP
             // 
             this.labelIP.AutoSize = true;
+            this.labelIP.BackColor = System.Drawing.Color.Transparent;
             this.labelIP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelIP.Location = new System.Drawing.Point(214, 45);
+            this.labelIP.ForeColor = System.Drawing.Color.White;
+            this.labelIP.Location = new System.Drawing.Point(190, 52);
             this.labelIP.Name = "labelIP";
             this.labelIP.Size = new System.Drawing.Size(63, 25);
             this.labelIP.TabIndex = 3;
@@ -82,7 +91,7 @@
             // textBoxUser
             // 
             this.textBoxUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxUser.Location = new System.Drawing.Point(340, 108);
+            this.textBoxUser.Location = new System.Drawing.Point(316, 115);
             this.textBoxUser.Name = "textBoxUser";
             this.textBoxUser.Size = new System.Drawing.Size(258, 30);
             this.textBoxUser.TabIndex = 4;
@@ -90,7 +99,7 @@
             // textBoxIP
             // 
             this.textBoxIP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxIP.Location = new System.Drawing.Point(340, 45);
+            this.textBoxIP.Location = new System.Drawing.Point(316, 52);
             this.textBoxIP.Name = "textBoxIP";
             this.textBoxIP.Size = new System.Drawing.Size(258, 30);
             this.textBoxIP.TabIndex = 5;
@@ -98,7 +107,7 @@
             // textBoxPassword
             // 
             this.textBoxPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxPassword.Location = new System.Drawing.Point(340, 175);
+            this.textBoxPassword.Location = new System.Drawing.Point(316, 182);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.PasswordChar = '*';
             this.textBoxPassword.Size = new System.Drawing.Size(258, 30);
@@ -106,17 +115,39 @@
             // 
             // richTextBoxConnectionResult
             // 
-            this.richTextBoxConnectionResult.Location = new System.Drawing.Point(63, 384);
+            this.richTextBoxConnectionResult.Location = new System.Drawing.Point(47, 461);
             this.richTextBoxConnectionResult.Name = "richTextBoxConnectionResult";
             this.richTextBoxConnectionResult.Size = new System.Drawing.Size(684, 197);
             this.richTextBoxConnectionResult.TabIndex = 7;
             this.richTextBoxConnectionResult.Text = "";
             // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(751, 289);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(121, 24);
+            this.comboBox2.TabIndex = 9;
+            // 
+            // buttonTestConnection
+            // 
+            this.buttonTestConnection.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.buttonTestConnection.Location = new System.Drawing.Point(44, 310);
+            this.buttonTestConnection.Name = "buttonTestConnection";
+            this.buttonTestConnection.Size = new System.Drawing.Size(141, 83);
+            this.buttonTestConnection.TabIndex = 10;
+            this.buttonTestConnection.Text = "Test de Connection";
+            this.buttonTestConnection.UseVisualStyleBackColor = true;
+            this.buttonTestConnection.Click += new System.EventHandler(this.buttonTestConnection_Click);
+            // 
             // Connection
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(786, 615);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(765, 720);
+            this.Controls.Add(this.buttonTestConnection);
+            this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.richTextBoxConnectionResult);
             this.Controls.Add(this.textBoxPassword);
             this.Controls.Add(this.textBoxIP);
@@ -142,6 +173,8 @@
         private System.Windows.Forms.TextBox textBoxIP;
         private System.Windows.Forms.TextBox textBoxPassword;
         private System.Windows.Forms.RichTextBox richTextBoxConnectionResult;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Button buttonTestConnection;
     }
 }
 
